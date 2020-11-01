@@ -1,5 +1,5 @@
 {
-  "name": "mathgreen-api-node",
+  "name": "@docsystem/mathgreen-api-node",
   "version": "1.0.0",
   "description": "Mathgreen API for Node.JS",
   "main": "index.js",
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/DocSystem/mathgreen-api-node/issues"
   },
-  "homepage": "https://github.com/DocSystem/mathgreen-api-node#readme"
+  "homepage": "https://github.com/DocSystem/mathgreen-api-node#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3"
+  },
+  "devDependencies": {}
 }
