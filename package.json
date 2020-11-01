@@ -1,0 +1,22 @@
+{
+  "name": "mathgreen-api-node",
+  "version": "1.0.0",
+  "description": "Mathgreen API for Node.JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DocSystem/mathgreen-api-node.git"
+  },
+  "keywords": [
+    "mathgreen"
+  ],
+  "author": "DocSystem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DocSystem/mathgreen-api-node/issues"
+  },
+  "homepage": "https://github.com/DocSystem/mathgreen-api-node#readme"
+}
