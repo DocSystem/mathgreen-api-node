@@ -26,5 +26,5 @@ If this is a brand new project, make sure to create a ``package.json`` first wit
 Installation is done using the [``npm install`` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```
-$ npm install mathgreen
+$ npm install @docsystem/mathgreen-api-node
 ```
