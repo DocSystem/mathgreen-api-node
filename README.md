@@ -2,12 +2,13 @@
 
 Mathgreen API for Node.JS
 
-[![npm](https://img.shields.io/npm/v/@docsystem/mathgreen-api-node)](https://www.npmjs.com/package/@docsystem/mathgreen-api-node) ![npm downloads](https://img.shields.io/npm/dt/@docsystem/mathgreen-api-node) [![GitHub issues](https://img.shields.io/github/issues/DocSystem/mathgreen-api-node)](https://github.com/DocSystem/mathgreen-api-node/issues) ![made by docsystem](https://img.shields.io/badge/Made%20by-DocSystem-blue)
+![npm](https://img.shields.io/npm/v/@docsystem/mathgreen-api-node) ![npm downloads](https://img.shields.io/npm/dt/@docsystem/mathgreen-api-node) [![GitHub issues](https://img.shields.io/github/issues/DocSystem/mathgreen-api-node)](https://github.com/DocSystem/mathgreen-api-node/issues) ![made by docsystem](https://img.shields.io/badge/Made%20by-DocSystem-blue)
 
 ```js
-const mathgreen = require('mathgreen');
+const mathgreen = require('@docsystem/mathgreen-api-node');
 
 async function main() {
+  const home = await mathgreen.home();
   const premiere = await mathgreen.premiere();
   const terminale = await mathgreen.terminale();
   const nsi = await mathgreen.nsi();
