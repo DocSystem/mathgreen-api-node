@@ -178,12 +178,11 @@ exports.home = function() {
         }
         var databylines = data.split("\n");
         finaldata["topmessage"] = databylines[0] + " " + databylines[1];
-        for (var item in $("a")) {
-          try {
-            if ($("a")[item]["children"] != undefined) if ($("a")[item]["children"][0] != undefined) if ($("a")[item]["children"][0]["data"] != undefined) if ($("a")[item]["children"][0]["data"].trim() != "") if ($("a")[item]["attribs"]["href"] != undefined) if ($("a")[item]["attribs"]["href"] != "http://creativecommons.org/licenses/by-nc-sa/4.0/") {
-              links.push({"name": $("a")[item]["children"][0]["data"].trim(), "url": "http://mathgreen.fr/" + $("a")[item]["attribs"]["href"]});
-            }
-          } catch {}
+        finaldata["mathlinks"] = [];
+        for (var item in $("section.sidebar a")) {
+          if ($("a")[item]["children"] != undefined) if ($("a")[item]["children"][0] != undefined) if ($("a")[item]["children"][0]["data"] != undefined) if ($("a")[item]["children"][0]["data"].trim() != "") if ($("a")[item]["attribs"]["href"] != undefined) if ($("a")[item]["attribs"]["href"] != "http://creativecommons.org/licenses/by-nc-sa/4.0/") {
+            finaldata["mathlinks"].push({"name": $("section.sidebar a")[item]["children"][0]["data"].trim(), "url": $("section.sidebar a")[item]["attribs"]["href"]})
+          }
         }
         resolve(finaldata);
       });
